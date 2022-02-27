@@ -81,7 +81,7 @@ button {
   }
   button {
     height: 130px;
-    width: 75px;
+    width: 80px;
     margin: 0.3vh;
     border-style: none;
     color: black;
@@ -96,7 +96,7 @@ button {
     align-items: center;
     height: 150px;
     width: 150px;
-    margin: 8px;
+    margin: 10px;
     font-size: 70px;
     border-style: solid;
     border-color: rgb(211, 214, 218);
@@ -120,6 +120,6 @@ button {
   }
 
   .one-and-a-half {
-    width: 120px;
+    width: 125px;
   }
 }
