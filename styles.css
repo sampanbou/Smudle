@@ -1,5 +1,7 @@
 p {
   margin: 0;
+  align-items: center;
+  text-align: center;
 }
 
 .jumbotron {
@@ -30,7 +32,7 @@ button {
   height: 52.5px;
   width: 37.5px;
   margin: 3px;
-  text-align: ;
+  text-align: center;
   border-style: none;
   background-color: rgb(211, 214, 218);
   text-transform: uppercase;
