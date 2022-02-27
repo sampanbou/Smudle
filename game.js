@@ -45,6 +45,7 @@ function activateKeys() {
   for (let i = 0; i < keys.length; i++) {
     // Key will print itself when clicked on
     keys[i].addEventListener("click", (e) => {
+      console.log(e.target);
       keySelected = e.target.getAttribute("data-key").toUpperCase();
 
       if (keySelected == "BACKSPACE") {
