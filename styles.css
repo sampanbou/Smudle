@@ -89,6 +89,23 @@ button:active {
 
 /* For Mobile */
 @media only screen and (max-device-width: 480px) {
+  #div1 {
+    position: fixed;
+    top: 110px;
+    height: 90px;
+    width: fit-content;
+    background-color: black;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    border-radius: 10px;
+    font-size: 50px;
+  }
+
   .container {
     justify-content: center;
     border: 0px;
