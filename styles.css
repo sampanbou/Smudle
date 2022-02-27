@@ -10,9 +10,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 8vh;
-  width: 8vh;
-  margin: 0.5vh;
+  height: 65px;
+  width: 65px;
+  margin: 2px;
   font-size: 4vh;
   border-style: solid;
   border-color: rgb(211, 214, 218);
@@ -22,7 +22,7 @@
 button {
   height: 52.5px;
   width: 37.5px;
-  margin: 0.5vh;
+  margin: 3px;
   border-style: none;
   background-color: rgb(211, 214, 218);
   text-transform: uppercase;
@@ -67,4 +67,17 @@ button {
   align-items: center;
   z-index: 10;
   border-radius: 10px;
+}
+
+/* For Mobile */
+@media only screen and (max-width: 600px) {
+  button {
+    height: 52.5px;
+    width: 37.5px;
+    margin: 0.5vh;
+    border-style: none;
+    background-color: rgb(214, 29, 134);
+    text-transform: uppercase;
+    border-radius: 4px;
+  }
 }
