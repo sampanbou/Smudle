@@ -79,6 +79,8 @@ function checkGuess(guessedWord) {
   guessedWord = guessedWord.toLowerCase();
   answerArray = ["grey", "grey", "grey", "grey", "grey"];
   greenList = "";
+  yellowList = "";
+
   for (let i = 0; i < 5; i++) {
     if (guessedWord[i] == todaysWord[i]) {
       answerArray[i] = "green";
@@ -91,6 +93,7 @@ function checkGuess(guessedWord) {
     let greenIndex = greenList.indexOf(currentLetter); // This will check if the letter was already marked green
     if (letterIndex != -1 && greenIndex == -1) {
       answerArray[letterIndex] = "yellow";
+      yellowList = yellowList + currentLetter;
     }
   }
 
@@ -113,6 +116,30 @@ function checkGuess(guessedWord) {
       }
     }, 500 * i);
   }
+
+  // coloring the keyboard
+  setTimeout(() => {
+    // Greys first
+    for (let i = 0; i < 5; i++) {
+      let keyboardKey = document.getElementById(guessedWord[i]);
+      keyboardKey.classList.add("grey");
+    }
+
+    // Then Yellows
+    for (let i = 0; i < yellowList.length; i++) {
+      let keyboardKey = document.getElementById(yellowList[i]);
+      keyboardKey.classList.add("yellow");
+    }
+
+    // Then Greens
+    for (let i = 0; i < greenList.length; i++) {
+      let keyboardKey = document.getElementById(greenList[i]);
+      keyboardKey.classList.add("green");
+    }
+  }, 2600);
+
+  console.log(greenList);
+  console.log(yellowList);
 }
 
 function areEqual(array1, array2) {
