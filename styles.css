@@ -1,5 +1,5 @@
 .jumbotron {
-  height: 10vh;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,8 +20,8 @@
 }
 
 button {
-  height: 7vh;
-  width: 5vh;
+  height: 52.5px;
+  width: 37.5px;
   margin: 0.5vh;
   border-style: none;
   background-color: rgb(211, 214, 218);
@@ -30,7 +30,7 @@ button {
 }
 
 .one-and-a-half {
-  width: 10vh;
+  width: 63px;
 }
 
 #gameBoard {
