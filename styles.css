@@ -70,13 +70,14 @@ button {
 }
 
 /* For Mobile */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-device-width: 480px) {
   button {
-    height: 28px;
-    width: 20px;
-    margin: 2px;
+    height: 52.5px;
+    width: 37.5px;
+    margin: 0.5vh;
     border-style: none;
     background-color: rgb(214, 29, 134);
+    color: black;
     text-transform: uppercase;
     border-radius: 4px;
   }
