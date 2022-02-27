@@ -12,6 +12,7 @@ let endMessages = [
   "Oof",
   "Yikes",
 ];
+let dictionaryString = "";
 
 $(function () {
   $("#div1").hide();
@@ -57,8 +58,14 @@ function activateKeys() {
         }
       } else if (keySelected == "ENTER") {
         // Check if word is valid (5 letters and real word)
-        // Submit word
-        if (guess.length == 5) {
+        let index = dictionaryString.indexOf(guess.toLowerCase());
+        if (guess.length != 5) {
+          ShowDiv("Not enough letters", 1000);
+        } else if (index == -1) {
+          ShowDiv("Not in word list", 1000);
+        }
+        // If word is valid, submit word
+        else {
           checkGuess(guess);
         }
       } else if (activeTileCol < 4) {
@@ -111,7 +118,8 @@ function checkGuess(guessedWord) {
           areEqual(answerArray, ["green", "green", "green", "green", "green"])
         ) {
           setTimeout(() => {
-            ShowDiv();
+            let endMessage = endMessages[activeTileRow - 1];
+            ShowDiv(endMessage, 3000);
           }, 200);
         }
       }
@@ -157,14 +165,24 @@ function areEqual(array1, array2) {
   return false;
 }
 
-function ShowDiv() {
-  let endMessage = endMessages[activeTileRow - 1];
+function ShowDiv(endMessage, time) {
+  //let endMessage = endMessages[activeTileRow - 1];
   $("#div1").html(endMessage);
   $("#div1").css("backgroundColor", "black");
   $("#div1").show();
   setTimeout(function () {
     $("#div1").hide();
-  }, 3000);
+  }, time);
+}
+
+function dosomething() {
+  if (typeof gbl_text == "undefined") {
+    setTimeout("dosomething()", 500); //call back until defined
+  } else {
+    dictionaryString = gbl_text;
+    console.log(dictionaryString);
+  }
 }
 
 createBoard();
+dosomething();

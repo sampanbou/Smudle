@@ -1,4 +1,4 @@
-aahed
+gbl_text=`aahed
 aalii
 aargh
 aarti
@@ -12969,4 +12969,4 @@ young
 youth
 zebra
 zesty
-zonal
+zonal`
