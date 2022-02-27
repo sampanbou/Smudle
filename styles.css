@@ -39,6 +39,13 @@ button {
   border-radius: 4px;
 }
 
+.btn:active {
+  transform: scale(0.98);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  /* Lowering the shadow */
+}
+
 .one-and-a-half {
   width: 63px;
 }
@@ -126,6 +133,7 @@ button {
   body {
     width: 100%;
     text-align: center;
+    touch-action: manipulation;
   }
 
   .one-and-a-half {
