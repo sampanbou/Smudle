@@ -1,3 +1,7 @@
+p {
+  margin: 0;
+}
+
 .jumbotron {
   height: 70px;
   display: flex;
@@ -26,6 +30,7 @@ button {
   height: 52.5px;
   width: 37.5px;
   margin: 3px;
+  text-align: ;
   border-style: none;
   background-color: rgb(211, 214, 218);
   text-transform: uppercase;
@@ -86,6 +91,7 @@ button {
     border-style: none;
     color: black;
     text-transform: uppercase;
+    text-align: center;
     border-radius: 8px;
     font-size: xx-large;
   }
@@ -117,6 +123,7 @@ button {
 
   body {
     width: 100%;
+    text-align: center;
   }
 
   .one-and-a-half {
