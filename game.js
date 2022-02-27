@@ -57,7 +57,9 @@ function activateKeys() {
       } else if (keySelected == "ENTER") {
         // Check if word is valid (5 letters and real word)
         // Submit word
-        checkGuess(guess);
+        if (guess.length == 5) {
+          checkGuess(guess);
+        }
       } else if (activeTileCol < 4) {
         let newTile = document.getElementById(
           `${activeTileRow}_${activeTileCol + 1}`
