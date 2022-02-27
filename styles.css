@@ -103,6 +103,13 @@ button:active {
     text-align: center;
     border-radius: 8px;
     font-size: xx-large;
+    transition: all 0.2s ease-in-out;
+  }
+
+  button:active {
+    transform: none;
+    box-shadow: none;
+    /* transition: 0.1s; */
   }
 
   .gameTile {
