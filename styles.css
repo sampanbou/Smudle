@@ -1,0 +1,70 @@
+.jumbotron {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
+.gameTile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  width: 8vh;
+  margin: 0.5vh;
+  font-size: 4vh;
+  border-style: solid;
+  border-color: rgb(211, 214, 218);
+  font-weight: bold;
+}
+
+button {
+  height: 7vh;
+  width: 5vh;
+  margin: 0.5vh;
+  border-style: none;
+  background-color: rgb(211, 214, 218);
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+.one-and-a-half {
+  width: 10vh;
+}
+
+#gameBoard {
+  padding-bottom: 20px;
+}
+
+.grey {
+  background-color: rgb(120, 124, 126);
+  border-color: rgb(120, 124, 126);
+  color: white;
+}
+.yellow {
+  background-color: rgb(201, 180, 88);
+  border-color: rgb(201, 180, 88);
+  color: white;
+}
+.green {
+  background-color: rgb(106, 170, 100);
+  border-color: rgb(106, 170, 100);
+  color: white;
+}
+
+#div1 {
+  position: absolute;
+  bottom: 76vh;
+  height: 50px;
+  width: fit-content;
+  background-color: black;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  border-radius: 10px;
+}
