@@ -8,8 +8,8 @@ let endMessages = [
   "Cheater",
   "Lucky duck",
   "NOICE",
+  "Good!",
   "Not too shabby",
-  "Oof",
   "Yikes",
 ];
 let dictionaryString = "";
