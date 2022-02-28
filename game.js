@@ -1,12 +1,12 @@
 let gameBoardElement = document.querySelector("#gameBoard");
-let todaysWord = "squat";
+let todaysWord = "nacho";
 let activeTileRow = 0;
 let activeTileCol = -1;
 let guess = "";
 let activeTile = null;
 let endMessages = [
   "Cheater",
-  "Lucky bastard",
+  "Lucky duck",
   "NOICE",
   "Alright I guess",
   "Oof",
