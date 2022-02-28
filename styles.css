@@ -128,10 +128,10 @@ button:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150px;
-    width: 150px;
-    margin: 10px;
-    font-size: 70px;
+    height: 155px;
+    width: 155px;
+    margin: 8px;
+    font-size: 75px;
     border-style: solid;
     border-color: rgb(211, 214, 218);
     font-weight: bold;
