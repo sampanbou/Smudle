@@ -8,7 +8,7 @@ let endMessages = [
   "Cheater",
   "Lucky duck",
   "NOICE",
-  "Alright I guess",
+  "Not too shabby",
   "Oof",
   "Yikes",
 ];
