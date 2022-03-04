@@ -1,5 +1,5 @@
 let gameBoardElement = document.querySelector("#gameBoard");
-let todaysWord = "busty";
+let todaysWord = "quack";
 let activeTileRow = 0;
 let activeTileCol = -1;
 let guess = "";
